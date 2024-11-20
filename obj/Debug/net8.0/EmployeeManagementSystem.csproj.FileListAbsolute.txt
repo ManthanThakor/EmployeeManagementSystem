@@ -1,0 +1,15 @@
+E:\manthan\EmployeeManagementSystem\bin\Debug\net8.0\EmployeeManagementSystem.exe
+E:\manthan\EmployeeManagementSystem\bin\Debug\net8.0\EmployeeManagementSystem.deps.json
+E:\manthan\EmployeeManagementSystem\bin\Debug\net8.0\EmployeeManagementSystem.runtimeconfig.json
+E:\manthan\EmployeeManagementSystem\bin\Debug\net8.0\EmployeeManagementSystem.dll
+E:\manthan\EmployeeManagementSystem\bin\Debug\net8.0\EmployeeManagementSystem.pdb
+E:\manthan\EmployeeManagementSystem\obj\Debug\net8.0\EmployeeManagementSystem.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\EmployeeManagementSystem\obj\Debug\net8.0\EmployeeManagementSystem.AssemblyInfoInputs.cache
+E:\manthan\EmployeeManagementSystem\obj\Debug\net8.0\EmployeeManagementSystem.AssemblyInfo.cs
+E:\manthan\EmployeeManagementSystem\obj\Debug\net8.0\EmployeeManagementSystem.csproj.CoreCompileInputs.cache
+E:\manthan\EmployeeManagementSystem\obj\Debug\net8.0\EmployeeManagementSystem.sourcelink.json
+E:\manthan\EmployeeManagementSystem\obj\Debug\net8.0\EmployeeManagementSystem.dll
+E:\manthan\EmployeeManagementSystem\obj\Debug\net8.0\refint\EmployeeManagementSystem.dll
+E:\manthan\EmployeeManagementSystem\obj\Debug\net8.0\EmployeeManagementSystem.pdb
+E:\manthan\EmployeeManagementSystem\obj\Debug\net8.0\EmployeeManagementSystem.genruntimeconfig.cache
+E:\manthan\EmployeeManagementSystem\obj\Debug\net8.0\ref\EmployeeManagementSystem.dll
