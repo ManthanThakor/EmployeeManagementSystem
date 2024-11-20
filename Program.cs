@@ -38,10 +38,36 @@ namespace EmployeeManagmenetSystem
 
         public Employee(int id, string name, string department,double saary )
         {
-
+            Id = id;
+            Name = name;
+            Department = department;
+            Salary = saary;
+            TotalEmployees++;
         }
 
+        public virtual void DisplayDetails()
+        {
+            Console.WriteLine($"ID: {Id}, Name: {Name}, Department: {Department}, Salary: {Salary:C}");
+        }
+
+        public void UpdateName(string newName)
+        {
+            Name = newName;
+        }
+
+        public void UpdateDepartment(string
+            newDepartment)
+        {
+            Department = newDepartment;
+        }
+
+        public void UpdateSalary(double newSalary)
+        {
+            Salary = newSalary;
+        }
     }
+
+
 
     class Program
     { 
