@@ -34,7 +34,6 @@ namespace EmployeeManagementSystem
             }
         }
 
-        // Keep TotalEmployees private and use a method to access it
         private static int totalEmployees;
         public static int TotalEmployees
         {
