@@ -67,6 +67,28 @@ namespace EmployeeManagmenetSystem
         }
     }
 
+    public class Manager : Employee
+    {
+        public int TeamSize { get; private set; }
+
+        public Manager(int id, string name, string deparment, double salary, int teamSize) : base (id , name,deparment, salary)
+        {
+            TeamSize = teamSize;
+        }
+
+        public override void DisplayDetails()
+        {
+            base.DisplayDetails();
+            Console.WriteLine($"Team Size: {TeamSize}");
+        }
+
+        public void UpdateTeamSize(int newTeamSize)
+        {
+            TeamSize = newTeamSize;
+        }
+    }
+
+
 
 
     class Program
