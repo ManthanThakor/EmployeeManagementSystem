@@ -60,7 +60,7 @@ namespace EmployeeManagementSystem
 
         public virtual void DisplayDetails()
         {
-            Console.WriteLine($"ID: {Id}, Name: {Name}, Department: {Department}, Salary: {Salary:C}");
+            Console.WriteLine($"ID: {Id}, Name: {Name}, Department: {Department}, Salary: {Salary}$");
         }
 
         public void UpdateName(string newName)
@@ -145,11 +145,11 @@ namespace EmployeeManagementSystem
                 employees.Remove(employee);
                 Employee.DecrementEmployeeCount();  
 
-                Console.WriteLine($"Employee with ID {id} has been removed.");
+                Console.WriteLine($"Employee with ID {id} has been removed.\n");
             }
             else
             {
-                Console.WriteLine($"Employee with ID {id} not found.");
+                Console.WriteLine($"Employee with ID {id} not found.\n");
             }
         }
 
@@ -162,11 +162,11 @@ namespace EmployeeManagementSystem
                 employee.UpdateName(newName);
                 employee.UpdateDepartment(newDepartment);
                 employee.UpdateSalary(newSalary);
-                Console.WriteLine($"Employee with ID {id} has been updated.");
+                Console.WriteLine($"Employee with ID {id} has been updated.\n");
             }
             else
             {
-                Console.WriteLine($"Employee with ID {id} not found.");
+                Console.WriteLine($"Employee with ID {id} not found.\n");
             }
         }
 
@@ -188,21 +188,19 @@ namespace EmployeeManagementSystem
 
             EmployeeManager employeeManager = new EmployeeManager();
 
-            var employeesToAdd = new List<Employee>
-            {
-                new Manager(1, "Abc xyz", "Sales", 90000, 10),
-                new Developer(2, "Bob Smith", "IT", 75000, new List<string> { "C#", "JavaScript" }),
-                new Developer(3, "Bob Smith2", "IT", 72000, new List<string> { "C#", "JavaScript" })
-            };
+            Manager manager = new Manager(1, "A", "Sales", 90000, 10);
+            employeeManager.AddEmployee(manager);
 
-            foreach (var employee in employeesToAdd)
-            {
-                employeeManager.AddEmployee(employee);
-            }
+            Developer developer = new Developer(2, "B", "IT", 70000, new List<string> { "C#", "JavaScript" });
+            Developer developer2 = new Developer(3, "c", "IT", 80000, new List<string> { "C#", "JavaScript","React"});
+            developer.AddProgrammingLanguage("Python");
+
+            employeeManager.AddEmployee(developer);
+            employeeManager.AddEmployee(developer2);
 
             employeeManager.DisplayAllEmployees();
 
-            employeeManager.UpdateEmployee(1, "Alice Brown", "Marketing", 95000);
+            employeeManager.UpdateEmployee(1, "abcd", "Marketing", 95000);
 
             employeeManager.RemoveEmployee(2);
 
