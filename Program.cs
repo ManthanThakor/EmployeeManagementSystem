@@ -36,12 +36,12 @@ namespace EmployeeManagmenetSystem
 
         public static int TotalEmployees { get; private set; }
 
-        public Employee(int id, string name, string department,double saary )
+        public Employee(int id, string name, string department,double salary )
         {
             Id = id;
             Name = name;
             Department = department;
-            Salary = saary;
+            Salary = salary;
             TotalEmployees++;
         }
 
@@ -88,6 +88,31 @@ namespace EmployeeManagmenetSystem
         }
     }
 
+    public class Developer : Employee
+    { 
+        public List<string> ProgrammingLanguage { get; private set; }
+                
+        public Developer(int id, string name, string department, double saary, List<string> ): base(id , name,department, saary)
+        {
+            ProgrammingLanguage = new List<string>(ProgrammingLanguage);
+        }
+
+        public override void DisplayDetails()
+        {
+            base.DisplayDetails();
+            Console.WriteLine($"Programming Languages{string.Join(",", ProgrammingLanguage)}");
+        }
+
+        public void AddProgrammingLanguage(string language)
+        {
+            ProgrammingLanguage.Add(language);
+        }
+
+        public void RemoveProgrammingLanguage(string language)
+        {
+            ProgrammingLanguage.Remove(language);
+        }
+    }
 
 
 
